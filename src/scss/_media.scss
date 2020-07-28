@@ -1,0 +1,1282 @@
+// @media (min-width: 1px) {
+//   header .container .header__wrap nav a:hover {
+//     font-size: 18px;
+//     font-weight: 900;
+//     color: #3454f5;
+//     transition: font-size 0.2s, color 0.1s;
+//   }
+//   a:hover:after {
+//     width: 100%;
+//     transform: scaleX(1);
+//   }
+//   a::after {
+//     content: "";
+//     bottom: 0;
+//     left: 0;
+//     position: absolute;
+//     width: 100%;
+//     height: 8px;
+//     background-color: #3454f5;
+//     transition: 0.3s;
+//     transform: scaleX(0);
+//   }
+// }
+// // @media (handheld) {
+// // }
+
+@media (max-width: 1540px) {
+  section.internet
+    .container
+    .internet-wrap
+    .internet__header
+    img.internet__blackBox {
+    left: -100px;
+    width: 600px;
+    //  position: static;
+  }
+  header .container .header__wrap nav {
+    position: static;
+  }
+
+  section.simpleDevelopment .container .simpleDevelopment__wrap img.notebook {
+    width: 55%;
+    position: static;
+  }
+  section.simpleDevelopment .container .simpleDevelopment__wrap {
+    padding: 0;
+  }
+  section.arrows .arrowsImages .arrows__wrap p {
+    font-size: 2.5vw;
+    line-height: 4vw;
+  }
+  section.arrows .arrowsImages .arrows__wrap img {
+    max-width: 10vw;
+  }
+  section.cases .container .cases__wrap .cases__content .cases__item img {
+    max-width: 60%;
+    // height: auto;
+    object-fit: cover;
+  }
+  section.team .team__wrap .team__description p {
+    font-size: 16px;
+    margin: 0 10px;
+  }
+
+  section.whatWeDoing
+    .container
+    .whatWeDoing__wrap
+    .whatWeDoing__calculate
+    .whatWeDoing__calcBlock
+    .whatWeDoing__inputs
+    input,
+  section.whatWeDoing
+    .container
+    .whatWeDoing__wrap
+    .whatWeDoing__calculate
+    .whatWeDoing__calcBlock
+    .whatWeDoing__inputs
+    button {
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+  section.whatWeDoing
+    .container
+    .whatWeDoing__wrap
+    .whatWeDoing__calculate
+    .whatWeDoing__calcBlock
+    .whatWeDoing__inputs {
+    flex-direction: column;
+  }
+  section.whatWeDoing .container .whatWeDoing__wrap .whatWeDoing__calculate {
+    padding: 50px 20px;
+  }
+  section.whatWeDoing
+    .container
+    .whatWeDoing__wrap
+    .whatWeDoing__calculate
+    .whatWeDoing__calcBlock
+    .whatWeDoing__calculateText
+    p {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  section.simpleDevelopment
+    .container
+    .simpleDevelopment__wrap
+    .simpleDevelopment__description
+    h1 {
+    // font-size: 55px;
+  }
+  section.bigCalc .container .bigCalc__wrap .rate .price {
+    padding: 0 10px;
+    white-space: nowrap;
+  }
+  section.whatWeDoing
+    .container
+    .whatWeDoing__wrap
+    .whatWeDoing__blockItems
+    .whatWeDoing__item
+    .item__description {
+    max-width: 55%;
+  }
+
+  section.whatWeDoing
+    .container
+    .whatWeDoing__wrap
+    .whatWeDoing__blockItems
+    .whatWeDoing__item
+    .item__image
+    img {
+    width: 100%;
+  }
+
+  section.arrows .arrowsImages .arrows__wrap p {
+    // font-size: 1vw;
+    max-width: 50%;
+    margin: 0 auto;
+  }
+  section.internet
+    .container
+    .internet-wrap
+    .internet__header
+    img.internet__blackBox {
+    width: 120%;
+    position: static;
+  }
+  .services .services__block .services__item {
+    height: 45vw;
+    padding: 20px;
+  }
+  .services .services__block .services__item .services__btn {
+    width: 60px;
+    height: 60px;
+  }
+  .services h2 {
+    font-size: 32px;
+  }
+  section.team .team__wrap h2 {
+    font-size: 32px;
+  }
+  // section.whatWeDoing
+  //   .container
+  //   .whatWeDoing__wrap
+  //   .whatWeDoing__blockItems
+  //   .whatWeDoing__item
+  //   .item__image {
+  //   width: 50%;
+  //   max-width: 50%;
+  //   overflow: hidden;
+  //   object-fit: cover;
+  //   height: 50vw;
+  // }
+  // section.whatWeDoing
+  //   .container
+  //   .whatWeDoing__wrap
+  //   .whatWeDoing__blockItems
+  //   .whatWeDoing__item
+  //   .item__image
+  //   img {
+  //   width: 100%;
+  //   object-fit: cover;
+  //   max-width: 50%;
+  // }
+}
+
+@media (max-width: 940px) {
+  nav.nav,
+  header .container .header__wrap nav {
+    // display: none !important;
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    z-index: 9;
+    height: 400px;
+    background-color: #fff;
+    max-width: none;
+    justify-content: center;
+    transform: translate(0px, -100%);
+    transition: transform 0.8s;
+  }
+
+  a::after {
+    display: none;
+  }
+
+  a:hover {
+    display: none;
+  }
+  header .container .header__wrap nav.active {
+    display: flex !important;
+    flex-direction: column;
+    position: absolute;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    z-index: 9;
+    height: 400px;
+    background-color: #fff;
+    max-width: none;
+    justify-content: center;
+    transform: translate(0px, 0%);
+    transition: transform 0.8s;
+  }
+  header .container .header__wrap nav a {
+    position: static;
+    transform: none;
+    text-align: center;
+    justify-content: center;
+  }
+  header .container .header__wrap nav a.active {
+    border: none;
+    background-color: #eff7ff;
+  }
+  header .container .header__wrap nav a:hover {
+    font-size: 16px;
+    font-weight: 900;
+    transition: font-size 0.2s, color 0.1s;
+    color: #3454f5;
+    background: none;
+  }
+  header .container .header__wrap nav a.active:hover {
+    border: none;
+    background-color: #eff7ff;
+    font-size: 18px;
+    color: #3454f5;
+  }
+
+  header .container .header__wrap button.header__btn {
+    display: none;
+  }
+
+  .wrapper-menu {
+    display: flex;
+  }
+  .whatWeDoing__calculate img {
+    width: 40%;
+  }
+  section.whatWeDoing
+    .container
+    .whatWeDoing__wrap
+    .whatWeDoing__blockItems
+    .whatWeDoing__item
+    .item__image {
+    // width: 100%;
+    object-fit: cover;
+    width: 60vw;
+    height: 50vw;
+    overflow: hidden;
+  }
+  section.whatWeDoing
+    .container
+    .whatWeDoing__wrap
+    .whatWeDoing__blockItems
+    .whatWeDoing__item
+    .item__image
+    img {
+    width: 99%;
+    object-fit: contain;
+  }
+  section.whatWeDoing
+    .container
+    .whatWeDoing__wrap
+    .whatWeDoing__blockItems
+    .whatWeDoing__item
+    .item__image
+    img.logo {
+    width: 80%;
+  }
+  section.whatWeDoing
+    .container
+    .whatWeDoing__wrap
+    .whatWeDoing__calculate
+    .whatWeDoing__calcBlock
+    .whatWeDoing__calculateText
+    h4 {
+    font-size: 26px;
+    text-align: center;
+  }
+  section.whatWeDoing
+    .container
+    .whatWeDoing__wrap
+    .whatWeDoing__calculate
+    .whatWeDoing__calcBlock
+    .whatWeDoing__calculateText
+    p {
+    font-size: 16px;
+  }
+  section.whatWeDoing
+    .container
+    .whatWeDoing__wrap
+    .whatWeDoing__calculate
+    .whatWeDoing__calcBlock {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+  }
+  .stack .container .stack__wrap .stack__content .stack__blockItems {
+    flex-direction: column;
+    margin-bottom: 4vw;
+  }
+  .stack
+    .container
+    .stack__wrap
+    .stack__content
+    .stack__blockItems
+    .stack__item {
+    margin-bottom: 4vw;
+    width: 60%;
+  }
+  .stack
+    .container
+    .stack__wrap
+    .stack__content
+    .stack__blockItems
+    .stack__item:last-child {
+    margin-bottom: 0;
+  }
+  .stack .container .stack__wrap .stack__content h3 {
+    text-align: center;
+  }
+  .stack .container .stack__wrap {
+    padding: 5vw 10px;
+  }
+  footer .footer__wrap .footer__block {
+    flex-direction: column;
+  }
+  section.simpleDevelopment
+    .container
+    .simpleDevelopment__wrap
+    .simpleDevelopment__description
+    h1 {
+    font-size: 48px;
+  }
+  section.simpleDevelopment
+    .container
+    .simpleDevelopment__wrap
+    .simpleDevelopment__description
+    p {
+    font-size: 20px;
+  }
+  section.simpleDevelopment
+    .container
+    .simpleDevelopment__wrap
+    .simpleDevelopment__description
+    button.calculation {
+    width: 250px;
+  }
+  section.whatWeDoing
+    .container
+    .whatWeDoing__wrap
+    .whatWeDoing__blockItems
+    .whatWeDoing__item {
+    margin-bottom: 55px;
+  }
+  section.whatWeDoing
+    .container
+    .whatWeDoing__wrap
+    .whatWeDoing__blockItems
+    .whatWeDoing__item
+    .item__description {
+    max-width: 550px;
+    margin-left: 40px;
+  }
+  section.whatWeDoing
+    .container
+    .whatWeDoing__wrap
+    .whatWeDoing__blockItems
+    .whatWeDoing__item
+    .item__description
+    p {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  section.internet .container .internet-wrap {
+    flex-direction: column;
+  }
+  section.internet .container .internet-wrap .internet__header {
+    width: 100%;
+  }
+  section.internet .container .internet-wrap {
+    padding: 0;
+    margin: 0;
+  }
+  section.internet
+    .container
+    .internet-wrap
+    .internet__header
+    img.internet__blackBox {
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+  }
+  section.internet .container .internet-wrap .internet__paragraphs {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-top: 0;
+    justify-content: space-between;
+  }
+  section.internet
+    .container
+    .internet-wrap
+    .internet__paragraphs
+    .internet__item {
+    flex-basis: 48%;
+  }
+  section.internet
+    .container
+    .internet-wrap
+    .internet__paragraphs
+    .internet__item
+    img {
+  }
+
+  .internet__paragraphs {
+    .internet__item {
+      .img__wrap {
+        width: 180px;
+        height: 180px;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+      }
+    }
+  }
+  section.internet
+    .container
+    .internet-wrap
+    .internet__paragraphs
+    .internet__item
+    img,
+  section.internet
+    .container
+    .internet-wrap
+    .internet__paragraphs
+    .internet__item
+    img:first-child {
+    display: block;
+    margin: 0;
+    padding: 0;
+    position: static;
+  }
+  section.internet
+    .container
+    .internet-wrap
+    .internet__paragraphs
+    .internet__item {
+    padding: 0;
+    margin-bottom: 35px;
+  }
+  section.internet
+    .container
+    .internet-wrap
+    .internet__paragraphs
+    .internet__item
+    h5 {
+    text-align: center;
+    width: 100%;
+    font-size: 22px;
+  }
+  section.simpleDevelopment
+    .container
+    .simpleDevelopment__wrap
+    .simpleDevelopment__description
+    p {
+    font-size: 18px;
+  }
+  section.cases .container .cases__wrap {
+    padding: 80px 0;
+  }
+  section.bigCalc .container .bigCalc__wrap form input {
+    margin-right: 10px;
+  }
+  section.team .team__wrap .team__description p {
+    max-width: 350px;
+  }
+  section.bigCalc .container .bigCalc__wrap form input,
+  section.bigCalc .container .bigCalc__wrap form button {
+    width: 260px;
+  }
+
+  footer .footer__wrap .footer__block .footer__secondBlock,
+  footer .footer__wrap .footer__block .footer__firstBlock {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    text-align-last: left;
+  }
+  footer .footer__wrap .footer__block .footer__firstBlock {
+    margin-bottom: 40px;
+  }
+  .contacts,
+  .footer__networks,
+  .footer__locations,
+  .footer__competences {
+    // text-align-last: left;
+    width: 40%;
+  }
+  footer .footer__wrap .footer__block .footer__secondBlock .footer__networks h5,
+  footer .footer__wrap .footer__block .footer__firstBlock .footer__networks h5 {
+    display: flex;
+  }
+  footer {
+    padding: 40px 0;
+  }
+  section.arrows .arrowsImages {
+    min-height: 400px;
+  }
+  section.arrows .arrowsImages .arrows__wrap p {
+    font-size: 3vw;
+  }
+  header .container .header__wrap nav a {
+    height: 60px;
+  }
+  section.whatWeDoing
+    .container
+    .whatWeDoing__wrap
+    .whatWeDoing__blockItems
+    .whatWeDoing__item
+    .item__description {
+    max-width: 55%;
+  }
+  section.cases .container .cases__wrap .cases__content .cases__item {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+  section.cases
+    .container
+    .cases__wrap
+    .cases__content
+    .cases__item
+    .cases__description
+    .cases__numbers
+    .cases__num
+    p {
+    max-width: none;
+  }
+  section.cases .container .cases__wrap .cases__content .cases__item img {
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+  section.cases
+    .container
+    .cases__wrap
+    .cases__content
+    .cases__item
+    .cases__description {
+    width: 100%;
+  }
+  section.cases
+    .container
+    .cases__wrap
+    .cases__content
+    .cases__item
+    .cases__description
+    .cases__numbers
+    .cases__num
+    p {
+    text-align: left;
+    display: flex;
+    align-items: center;
+  }
+  section.cases
+    .container
+    .cases__wrap
+    .cases__content
+    .cases__item
+    .cases__description
+    .cases__numbers
+    .cases__num {
+    margin-bottom: 8px;
+  }
+  section.cases
+    .container
+    .cases__wrap
+    .cases__content
+    .cases__item
+    .cases__logo {
+    width: 25%;
+    text-align: left;
+    display: flex;
+    justify-content: start;
+    margin: 0;
+  }
+  section.cases .container .cases__wrap .cases__content .cases__item img {
+    margin-top: 50px;
+  }
+  section.cases
+    .container
+    .cases__wrap
+    .cases__content
+    .cases__item
+    .cases__logo.first {
+    width: 40%;
+  }
+  section.cases .container .cases__wrap .cases__content .cases__item {
+    margin-bottom: 70px;
+    position: relative;
+  }
+  section.cases
+    .container
+    .cases__wrap
+    .cases__content
+    .cases__item
+    .cases__description
+    h6 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    font-size: 26px;
+  }
+  section.cases .container .cases__wrap h3 {
+    text-align: center;
+  }
+  section.bigCalc .container .bigCalc__wrap h2 {
+    font-size: 34px;
+  }
+
+  // section.cases .container .cases__wrap .cases__content .cases__item {
+  //   text-align: center;
+  //   margin: 0 auto;
+  // }
+  // section.cases .container .cases__wrap .cases__content .cases__item img {
+  //   text-align: center;
+  //   margin: 0 auto;
+  // }
+  // section.cases
+  //   .container
+  //   .cases__wrap
+  //   .cases__content
+  //   .cases__item
+  //   .cases__description {
+  //   text-align: center;
+  //   margin: 0 auto;
+  // }
+  // section.cases .container .cases__wrap .cases__content .cases__item {
+  //   margin-bottom: 40px;
+  // }
+  // section.cases
+  //   .container
+  //   .cases__wrap
+  //   .cases__content
+  //   .cases__item
+  //   .cases__description
+  //   .cases__numbers {
+  //   display: flex;
+  //   justify-content: space-between;
+  //   align-items: center;
+  //   width: 100vw;
+  //   max-width: none;
+  //   border: 1px solid red;
+  // }
+  // section.cases
+  //   .container
+  //   .cases__wrap
+  //   .cases__content
+  //   .cases__item
+  //   .cases__description {
+  //   width: 100%;
+  // }
+  section.internet
+    .container
+    .internet-wrap
+    .internet__paragraphs
+    .internet__item
+    h5 {
+    height: 70px;
+  }
+  section.internet
+    .container
+    .internet-wrap
+    .internet__paragraphs
+    .internet__item
+    p {
+    text-align: justify;
+  }
+  section.arrows .arrowsImages .arrows__wrap p {
+    font-size: 3.5vw;
+    max-width: 60%;
+    line-height: 35px;
+  }
+  section.arrows .arrowsImages .arrows__wrap img {
+    max-width: 18vw;
+  }
+}
+
+@media (max-width: 735px) {
+  section.internet
+    .container
+    .internet-wrap
+    .internet__header
+    .internet__description
+    h3 {
+    font-size: 32px;
+  }
+  section.simpleDevelopment .container .simpleDevelopment__wrap {
+    flex-direction: column;
+    // justify-content: center;
+    text-align: justify;
+  }
+  section.simpleDevelopment .container .simpleDevelopment__wrap img.notebook {
+    position: absolute;
+    top: 40%;
+  }
+  section.simpleDevelopment
+    .container
+    .simpleDevelopment__wrap
+    .simpleDevelopment__description {
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+    align-content: space-between;
+    padding: 50px 15px;
+    margin: 0;
+  }
+
+  section.simpleDevelopment
+    .container
+    .simpleDevelopment__wrap
+    .simpleDevelopment__description
+    button.calculation {
+    margin: 0 auto;
+  }
+  section.simpleDevelopment
+    .container
+    .simpleDevelopment__wrap
+    .simpleDevelopment__description
+    h1 {
+    text-align: center;
+  }
+  // section.whatWeDoing
+  //   .container
+  //   .whatWeDoing__wrap
+  //   .whatWeDoing__blockItems
+  //   .whatWeDoing__item {
+  //   display: flex;
+  //   flex-direction: column;
+  // }
+  section.whatWeDoing
+    .container
+    .whatWeDoing__wrap
+    .whatWeDoing__blockItems
+    .whatWeDoing__item
+    .item__description
+    h4 {
+    font-size: 24px;
+  }
+  section.whatWeDoing
+    .container
+    .whatWeDoing__wrap
+    .whatWeDoing__blockItems
+    .whatWeDoing__item
+    .item__description
+    p {
+    font-size: 16px;
+    line-height: 20px;
+  }
+  section.whatWeDoing
+    .container
+    .whatWeDoing__wrap
+    .whatWeDoing__blockItems
+    .whatWeDoing__item
+    .item__description {
+    margin-left: 25px;
+  }
+  section.whatWeDoing
+    .container
+    .whatWeDoing__wrap
+    .whatWeDoing__blockItems
+    .whatWeDoing__item
+    .item__description {
+    max-width: 69%;
+  }
+  section.whatWeDoing
+    .container
+    .whatWeDoing__wrap
+    .whatWeDoing__blockItems
+    .whatWeDoing__item
+    .item__image {
+    width: 35vw;
+  }
+  section.whatWeDoing .container .whatWeDoing__wrap h2 {
+    font-size: 32px;
+  }
+  section.whatWeDoing .container .whatWeDoing__wrap .whatWeDoing__calculate {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 15px;
+  }
+  section.bigCalc .container .bigCalc__wrap form {
+    flex-direction: column;
+    // height: 100px;
+  }
+  section.bigCalc .container .bigCalc__wrap form input,
+  section.bigCalc .container .bigCalc__wrap form button {
+    height: 100px;
+    padding: 25px 30px;
+  }
+  section.whatWeDoing
+    .container
+    .whatWeDoing__wrap
+    .whatWeDoing__calculate
+    .whatWeDoing__calcBlock
+    .whatWeDoing__inputs
+    input,
+  section.whatWeDoing
+    .container
+    .whatWeDoing__wrap
+    .whatWeDoing__calculate
+    .whatWeDoing__calcBlock
+    .whatWeDoing__inputs
+    button {
+    margin-right: 0;
+    margin-top: 5px;
+  }
+  section.bigCalc .container .bigCalc__wrap h2 {
+    font-size: 32px;
+  }
+  section.bigCalc .container .bigCalc__wrap {
+    padding: 40px 0;
+  }
+  section.team {
+    padding: 80px 0;
+  }
+  section.team .team__wrap .team__description {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    // justify-content: center;
+    // text-align: center;
+  }
+  section.team .team__wrap .team__description .team__senior {
+    margin: 0 auto;
+  }
+  section.team .team__wrap .team__description p {
+    // margin-bottom: 50px;
+    // margin-left: 50px;
+    margin: 0 auto;
+    text-align: justify;
+    margin-bottom: 50px;
+  }
+  section.team .team__wrap .team__description p {
+    display: block;
+  }
+  section.team .team__wrap .team__description .team__senior {
+    display: flex;
+    flex-direction: column;
+  }
+  section.team .team__wrap .team__description .team__senior img {
+    margin-bottom: 15px;
+    margin-right: 0;
+  }
+  .services .services__block {
+    display: block;
+  }
+  .services .services__block .services__item {
+    display: block;
+    width: 100%;
+    height: 121vw;
+    max-width: 355px;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    max-height: 430px;
+  }
+  section.team .team__wrap {
+    margin-bottom: 60px;
+  }
+  section.simpleDevelopment {
+    margin-bottom: 60px;
+  }
+  section.whatWeDoing .container .whatWeDoing__wrap {
+    padding: 60px 0;
+  }
+  section.cases .container .cases__wrap h3 {
+    font-size: 32px;
+  }
+  section.cases
+    .container
+    .cases__wrap
+    .cases__content
+    .cases__item
+    .cases__description
+    h6 {
+    font-size: 22px;
+  }
+  section.whatWeDoing
+    .container
+    .whatWeDoing__wrap
+    .whatWeDoing__blockItems
+    .whatWeDoing__item
+    .item__description
+    h4 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 575px) {
+  section.simpleDevelopment .container .simpleDevelopment__wrap img.notebook {
+    top: 65%;
+    transform: translateY(-50%);
+    width: 70%;
+  }
+  section.simpleDevelopment
+    .container
+    .simpleDevelopment__wrap
+    .simpleDevelopment__description
+    p {
+    font-size: 18px;
+  }
+  section.simpleDevelopment
+    .container
+    .simpleDevelopment__wrap
+    .simpleDevelopment__description
+    p {
+    margin-bottom: 0;
+    line-height: 30px;
+  }
+  section.simpleDevelopment
+    .container
+    .simpleDevelopment__wrap
+    .simpleDevelopment__description
+    h1 {
+    font-size: 40px;
+  }
+  section.internet
+    .container
+    .internet-wrap
+    .internet__header
+    .internet__description
+    h3 {
+    font-size: 26px;
+    line-height: 40px;
+  }
+  section.internet
+    .container
+    .internet-wrap
+    .internet__header
+    .internet__description
+    p {
+    font-size: 18px;
+    line-height: 30px;
+  }
+  section.internet
+    .container
+    .internet-wrap
+    .internet__header
+    img.internet__blackBox {
+    display: none;
+  }
+
+  section.internet
+    .container
+    .internet-wrap
+    .internet__paragraphs
+    .internet__item {
+    padding: 0 5px;
+  }
+  section.internet
+    .container
+    .internet-wrap
+    .internet__paragraphs
+    .internet__item
+    p {
+    font-size: 18px;
+    line-height: 25px;
+  }
+  section.internet
+    .container
+    .internet-wrap
+    .internet__paragraphs
+    .internet__item
+    h5 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  section.internet
+    .container
+    .internet-wrap
+    .internet__paragraphs
+    .internet__item
+    h5 {
+    margin-bottom: 0;
+  }
+  section.internet
+    .container
+    .internet-wrap
+    .internet__paragraphs
+    .internet__item
+    img,
+  section.internet
+    .container
+    .internet-wrap
+    .internet__paragraphs
+    .internet__item
+    img:first-child {
+    width: 80px;
+  }
+  section.internet
+    .container
+    .internet-wrap
+    .internet__paragraphs
+    .internet__item
+    img,
+  section.internet
+    .container
+    .internet-wrap
+    .internet__paragraphs
+    .internet__item
+    img.first {
+    width: 110px;
+  }
+  .internet__paragraphs .internet__item .img__wrap {
+    width: auto;
+    height: auto;
+  }
+  section.simpleDevelopment
+    .container
+    .simpleDevelopment__wrap
+    .simpleDevelopment__description {
+    padding: 20px 5px;
+  }
+  section.simpleDevelopment
+    .container
+    .simpleDevelopment__wrap
+    .simpleDevelopment__description
+    button.calculation {
+    height: 60px;
+  }
+  section.arrows .arrowsImages .arrows__wrap img {
+    max-width: 22vw;
+  }
+  section.arrows .arrowsImages {
+    min-height: 300px;
+  }
+  section.arrows .arrowsImages .arrows__wrap p {
+    font-size: 4.3vw;
+  }
+  section.cases .container .cases__wrap .cases__content .cases__item img {
+    margin-top: 70px;
+  }
+  section.cases .container .cases__wrap {
+    padding: 15px 0;
+  }
+  section.cases
+    .container
+    .cases__wrap
+    .cases__content
+    .cases__item
+    .cases__logo {
+    width: 35%;
+  }
+  section.cases
+    .container
+    .cases__wrap
+    .cases__content
+    .cases__item
+    .cases__logo.cases__logo.first {
+    width: 50%;
+  }
+  section.arrows .arrowsImages .arrows__wrap img {
+    max-width: 32vw;
+  }
+  section.whatWeDoing
+    .container
+    .whatWeDoing__wrap
+    .whatWeDoing__blockItems
+    .whatWeDoing__item {
+    display: block;
+  }
+  section.whatWeDoing
+    .container
+    .whatWeDoing__wrap
+    .whatWeDoing__blockItems
+    .whatWeDoing__item
+    .item__image {
+    width: 80%;
+    height: 100vw;
+    max-width: 300px;
+    max-height: 400px;
+    margin: 0 auto 50px;
+  }
+  section.whatWeDoing .container .whatWeDoing__wrap .whatWeDoing__blockItems {
+    max-height: none;
+  }
+  section.whatWeDoing .container .whatWeDoing__wrap h2 {
+    font-size: 26px;
+    margin: 0 auto 20px;
+    max-width: none;
+    text-align: center;
+  }
+  section.whatWeDoing
+    .container
+    .whatWeDoing__wrap
+    .whatWeDoing__calculate
+    .whatWeDoing__calcBlock
+    .whatWeDoing__inputs
+    input,
+  section.whatWeDoing
+    .container
+    .whatWeDoing__wrap
+    .whatWeDoing__calculate
+    .whatWeDoing__calcBlock
+    .whatWeDoing__inputs
+    button {
+    width: 90%;
+    max-width: 300px;
+  }
+  .whatWeDoing__calculate img {
+    width: 200px;
+  }
+
+  section.whatWeDoing
+    .container
+    .whatWeDoing__wrap
+    .whatWeDoing__blockItems
+    .whatWeDoing__item
+    .item__description
+    h4 {
+    text-align: center;
+  }
+  section.whatWeDoing
+    .container
+    .whatWeDoing__wrap
+    .whatWeDoing__blockItems
+    .whatWeDoing__item
+    .item__description {
+    margin: 0 auto;
+    max-width: none;
+  }
+  section.simpleDevelopment .container .simpleDevelopment__wrap img.notebook {
+    width: 90%;
+  }
+  .stack
+    .container
+    .stack__wrap
+    .stack__content
+    .stack__blockItems
+    .stack__item {
+    width: 94%;
+  }
+  section.bigCalc .container .bigCalc__wrap .rate .price {
+    margin: 0 20px 20px 0;
+    display: inline-block;
+    padding: 0;
+    width: 100px;
+    text-align: center;
+    line-height: 56px;
+  }
+  section.bigCalc .container .bigCalc__wrap .rate p,
+  section.bigCalc .container .bigCalc__wrap .rate span {
+    display: inline-block;
+  }
+  section.bigCalc .container .bigCalc__wrap .rate p,
+  section.bigCalc .container .bigCalc__wrap .rate span {
+    max-width: none;
+    margin: 0 0 20px 0;
+  }
+
+  section.bigCalc .container .bigCalc__wrap .rate {
+    display: block;
+    margin-bottom: 0;
+  }
+  .stack .container .stack__wrap .stack__content h3 {
+    font-size: 32px;
+  }
+  .stack
+    .container
+    .stack__wrap
+    .stack__content
+    .stack__blockItems
+    .stack__item
+    .stack__itemWrap
+    img {
+    height: 35px;
+  }
+  footer .footer__wrap .footer__block .footer__firstBlock,
+  footer .footer__wrap .footer__block .footer__secondBlock,
+  footer .footer__wrap .footer__block .footer__firstBlock {
+    display: flex;
+    flex-direction: column;
+  }
+  .contacts,
+  .footer__networks,
+  .footer__locations,
+  .footer__competences {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 275px;
+  }
+  .footer__competences {
+    margin-bottom: 53px;
+  }
+  section.team .team__wrap img.all {
+    width: 100%;
+    object-fit: cover;
+    height: 250px;
+  }
+}
+
+@media (max-width: 460px) {
+  section.internet .container .internet-wrap .internet__paragraphs {
+    justify-content: center;
+  }
+  section.internet
+    .container
+    .internet-wrap
+    .internet__paragraphs
+    .internet__item {
+    flex-basis: 100%;
+  }
+  section.cases .container .cases__wrap .cases__content .cases__item img {
+    max-width: 80%;
+  }
+  section.whatWeDoing
+    .container
+    .whatWeDoing__wrap
+    .whatWeDoing__blockItems
+    .whatWeDoing__item
+    .item__image {
+    margin-bottom: 30px;
+  }
+  section.arrows .arrowsImages .arrows__wrap p {
+    max-width: 65%;
+    font-size: 5vw;
+  }
+  section.whatWeDoing
+    .container
+    .whatWeDoing__wrap
+    .whatWeDoing__blockItems
+    .whatWeDoing__item
+    .item__description
+    h4 {
+    text-align: center;
+  }
+  section.whatWeDoing
+    .container
+    .whatWeDoing__wrap
+    .whatWeDoing__blockItems
+    .whatWeDoing__item
+    .item__description {
+    max-width: none;
+    margin: 0;
+  }
+}

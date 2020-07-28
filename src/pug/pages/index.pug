@@ -1,0 +1,35 @@
+//- include ./../mixins/_socialNetworks.pug
+//- include ./../mixins/_profiles.pug
+
+<!DOCTYPE html>
+html(lang="en")
+   head
+      meta(charset="UTF-8")
+      meta(name="viewport" content="width=device-width, initial-scale=1")
+      //- favicons
+
+      //- --------
+      title TSEKH
+      link(rel="stylesheet" href="css/style.css")
+
+
+
+
+
+   body
+      include ./../sections/header.pug
+      include ./../sections/simpleDevelopment.pug
+      include ./../sections/internet.pug
+      include ./../sections/arrows.pug
+      include ./../sections/whatWeDoing.pug
+      include ./../sections/stack.pug
+      include ./../sections/cases.pug
+      include ./../sections/bigCalc.pug
+      include ./../sections/team.pug
+      include ./../sections/footer.pug
+
+script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js")
+
+script(src="./js/main.js")
+
+//- script(type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js")
